@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Administrador</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <script src="https://www.gstatic.com/firebasejs/11.5.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-firestore-compat.js"></script>
+    <script src="/configuracion.js"></script>
+    <script src="/funciones.js"></script>    
+    
+    
+</head>
+
+<body>
+  
+      
+            <label>Usuario</label>
+            <input type="text" id="userId" placeholder="Nombre" required>
+            <label >Contraseña</label>
+            <input type="text" id="passId" placeholder="Apellido" required>
+            <button type="submit" onclick="guardarDatos()">Guardar datos</button>
+
+            <div></div>
+      
+
+            <button  onclick="leerDatos()">Consultar listado</button>
+            <h1>Listado de registros</h1>
+            <h2 style="text-align:left;" id="listadoDatos"></h2>
+
+
+
+   
+</body>
+</html>
